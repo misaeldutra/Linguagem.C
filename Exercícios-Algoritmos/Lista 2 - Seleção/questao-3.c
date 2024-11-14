@@ -3,13 +3,14 @@
 #include <conio.h>
 
 int main(){
+    printf("Digite dois numeros diferentes \n");
     int valor1 , valor2;
 
     printf("Digite um numero: ");
     scanf("%d", &valor1);
 
 
-    printf("Digite outro numero diferente: ");
+    printf("Digite outro numero : ");
     scanf("%d", &valor2);
 
     if(valor1>valor2){

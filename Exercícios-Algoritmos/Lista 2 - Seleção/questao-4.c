@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &htrabalho);
 
     printf("Qual o salario por hora? ");
-    scanf("%d", salarioh);
+    scanf("%d", &salarioh);
 
 
     if(htrabalho>40){

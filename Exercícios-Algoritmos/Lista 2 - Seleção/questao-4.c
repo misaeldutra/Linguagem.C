@@ -3,21 +3,27 @@
 #include <conio.h>
 
 int main() {
-    int htrabalho, salarioh, stotal= salarioh*htrabalho;
+    float htrabalho, salarioh, stotal, hsemanal,extras;
 
     printf("Digite o numero de horas trabalhadas no mes: ");
-    scanf("%d", &htrabalho);
+    scanf("%f", &htrabalho);
 
     printf("Qual o salario por hora? ");
-    scanf("%d", &salarioh);
+    scanf("%f", &salarioh);
+
+    hsemanal = htrabalho/4;
+
+    float salario = hsemanal * salarioh;
 
 
-    if(htrabalho>40){
-        printf("O salario total foi %.d", stotal*0.5);
+    if(hsemanal > 40){ 
+        extras = hsemanal - 40;
+        stotal = salario + (extras*salarioh*1.5);
+    }else{
+        stotal = salario;
     }
-    else
-        printf("O salario total foi %.d", stotal);
 
+    printf("O salario total do funcionario foi de = %.2f\n", stotal);
 system("pause");
 return(0);
 }

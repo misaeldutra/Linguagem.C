@@ -1,6 +1,7 @@
 {
   "files.associations": {
-    "questao-1": "cpp"
+    "questao-1": "cpp",
+    "Questão2 Switch.C": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

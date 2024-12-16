@@ -10,6 +10,7 @@ int main(){
 	int i, idade, fx1 = 0, fx2 = 0, fx3 = 0, fx4 = 0;
 	float peso ,  mediapeso;
 	float speso1, speso2, speso3, speso4;
+	int idadeinvalida = 0;
 	
 	printf("Informe a idade e o peso de 15 pessoas: \n\n");
 	
@@ -33,15 +34,21 @@ int main(){
 				speso3 = speso3 + peso;
 				fx3++;
 				break;
-			case 31 ... 150:
+			
+			default:
+				case 31 ... 150:
 			    speso4 = speso4 + peso;
 				fx4++;
 				break;
-			default:
-				printf("IDADE FORA DAS FAIXAS! \n");
-				continue;
-		}
-	}
+				if (idade > 30){
+					speso4 = speso4 + peso;
+					fx4++;
+					break;
+				
+		        }  
+	}           
+	
+}
 	
 	printf("\n A Média dos pesos por faixa etária: \n");
 	

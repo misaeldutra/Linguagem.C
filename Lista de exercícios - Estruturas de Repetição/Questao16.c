@@ -23,12 +23,15 @@ int main(){
 		
 		switch(codigo){
 			case 'L':
+			case 'l':
 				total_limpeza = total_limpeza + valor;
 				break;
 			case 'A':
+			case 'a':
 				total_alimentacao = total_alimentacao + valor;
 				break;
 			case 'H':
+			case 'h':
 				total_higiene = total_higiene + valor;
 				break;
 			default:

@@ -4,8 +4,9 @@
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
-	float maiorh , menorh , h, somah;
+	float maiorh , menorh , h, somah_mulheres;
 	int i, nhomens = 0, nmulheres = 0;
+	char sexo;
 	
 	float mediahmulheres = 0;
 	
@@ -13,15 +14,17 @@ int main(){
 	
 	
 	for(i = 1; i <= 15; i++){
-		printf("Informe a altura da %d pessoa: ", i);
-		scanf("%f", &h);
-		
-		getchar();
-		
-		char sexo;
 		
 		printf("Informe o sexo da %d pessoa (M ou F): ", i);
 		scanf(" %c", &sexo);
+		
+		printf("Informe a altura da %d pessoa: ", i);
+		scanf("%f", &h);
+		
+		
+		
+	/*	printf("Informe o sexo da %d pessoa (M ou F): ", i);
+		scanf(" %c", &sexo); */
 		
 		if(primeira){
 			
@@ -36,7 +39,7 @@ int main(){
 		} 
 		
 		if(sexo == 'F' || sexo == 'f'){
-			somah = somah + h;
+			somah_mulheres = somah_mulheres + h;
 			nmulheres++;
 		} else if(sexo == 'M' || sexo == 'm'){
 			nhomens++;
@@ -44,7 +47,7 @@ int main(){
 	}
 	
 	if(nmulheres > 0){
-		mediahmulheres = somah/nmulheres;
+		mediahmulheres = somah_mulheres/nmulheres;
 	}
 	
 	printf("\n A maior altura do grupo = %.2f metros \n", maiorh);

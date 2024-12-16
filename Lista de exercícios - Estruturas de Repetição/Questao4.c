@@ -13,14 +13,14 @@ int main(){
     
 	printf("Digite o(s) número(s): \n");
 	
-	while (1){
+	while (1){ // condição que sempre será verdadeira. Loop infinito;
 		
-		if (scanf("%d", &num) != 1){
+		if (scanf("%d", &num) != 1){ // verificar se o numero nao foi lido corretamente;
 			
-			while(getchar() != '\n');
+			while(getchar() != '\n'); // enquanto caractere lido não for n; o getchar foi usado para consumir os caracteres restantes, para nao afetar a proxima leitura;
 			printf("Entrada Inválida!");
 			continue;
-		}
+		} 
 		
 		if(num == 0){
 			break; // para encerrar!

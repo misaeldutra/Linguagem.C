@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <locale.h>
 
+//CONFERIR SE ESTA RODANDO
+
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int i, idade, fx1 = 0, fx2, fx3, fx4;
+	int i, idade, fx1 = 0, fx2 = 0, fx3 = 0, fx4 = 0;
 	float peso ,  mediapeso;
 	float speso1, speso2, speso3, speso4;
 	

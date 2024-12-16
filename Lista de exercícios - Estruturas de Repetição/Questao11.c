@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// CONFERIR SE ESTA RODANDO
+
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int i, idade, opiniao, s_idade_otimo;

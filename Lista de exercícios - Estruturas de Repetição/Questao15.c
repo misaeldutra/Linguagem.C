@@ -42,7 +42,7 @@ int main(){
 		idademedia_campeonato = idadetotal / (2 * 3);
 		
 		
-		printf(" O Peso Médio de todos os jogadores particpantes = %.2f\n", pesomedio_campeonato);
+		printf(" O Peso Médio de todos os jogadores participantes = %.2f\n", pesomedio_campeonato);
 		
 		printf(" A Idade Média de todos os jogadores participantes = %d\n", idademedia_campeonato);
 	

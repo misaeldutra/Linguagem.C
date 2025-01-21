@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <limits.h>
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int num, maior= 0, menor= 0;
+	int num, maior = INT_MIN, menor = INT_MAX; // usamos essas coinstantes INT_MIN e INT_MAX para iniciar os valroes de maior e menor
 	
 	printf("Digite números inteiros Positivos!\n"); 
 	printf("Digite '0' para encerrar!\n");
@@ -43,11 +44,11 @@ int main(){
 		
 	}
 	
-	if(maior == 0 && menor == 0){
+	if(maior == INT_MIN || menor == INT_MAX){
 		printf("Nenhum valor válido foi digitado.\n");
 	} else {
-		printf("O maior número: %d\n", maior);
-		printf("O menor número: %d\n ", menor);
+		printf(" \n O maior número: %d\n", maior);
+		printf(" \n O menor número: %d\n ", menor);
 	}
 	
 	

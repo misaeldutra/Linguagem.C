@@ -28,11 +28,14 @@ int main(){
 	    	case 46 ... 60:
 	    		fx4++;
 	    		break;
-	    	case 61 ... 120:
-	    		fx5++;
-	    		break;
 	    	default:
-	    		printf("Essa idade esta fora das Categorias! \n");
+	    		if(idade >= 61){
+	    			fx5++;
+	    			break;
+				} else{
+					printf("Essa idade esta fora das Categorias! \n");
+				}
+	    		
 		}
 		/*
 		if(idade>=1 && idade<=15){
@@ -58,11 +61,11 @@ int main(){
     porcentagem_fx5 = (fx5*100)/ total;
     
     printf("A quantidade de pessoas em cada faixa etária: \n");
-    printf("Faixa 1 a 15 anos = %d pessoas (%.f%%)\n", fx1, porcentagem_fx1);
-    printf("Faixa 16 a 30 anos = %d pessoas (%.f%%)\n", fx2, porcentagem_fx2);
-    printf("Faixa 31 a 45 anos = %d pessoas (%.f%%)\n", fx3, porcentagem_fx3);
-    printf("Faixa 46 a 60 anos = %d pessoas (%.f%%)\n", fx4, porcentagem_fx4);
-    printf("Faixa Maior ou igual a 61 anos = %d pessoas (%.f%%)\n", fx5, porcentagem_fx5);
+    printf("Faixa 1 a 15 anos = %d pessoa(s) (%.f%%)\n", fx1, porcentagem_fx1);
+    printf("Faixa 16 a 30 anos = %d pessoa(s) (%.f%%)\n", fx2, porcentagem_fx2);
+    printf("Faixa 31 a 45 anos = %d pessoa(s) (%.f%%)\n", fx3, porcentagem_fx3);
+    printf("Faixa 46 a 60 anos = %d pessoa(s) (%.f%%)\n", fx4, porcentagem_fx4);
+    printf("Faixa Maior ou igual a 61 anos = %d pessoa(s) (%.f%%)\n", fx5, porcentagem_fx5);
    
 	
 	return 0;

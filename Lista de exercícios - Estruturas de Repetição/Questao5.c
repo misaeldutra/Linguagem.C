@@ -14,7 +14,7 @@ int main(){
 	scanf("%d", &num);
 	
 	if(num<=1){
-		printf(" \n O NÚMERO %d NÃO É PRIMO! \n");
+		printf(" \n O NÚMERO %d NÃO É PRIMO! \n", num);
 		return 0;
 	}
 	

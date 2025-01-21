@@ -36,19 +36,16 @@ int main(){
 				break;
 			
 			default:
-				case 31 ... 150:
+				if(idade > 30){
 			    speso4 = speso4 + peso;
 				fx4++;
 				break;
-				if (idade > 30){
-					speso4 = speso4 + peso;
-					fx4++;
-					break;
+			}
 				
-		        }  
+	   }  
 	}           
 	
-}
+
 	
 	printf("\n A Média dos pesos por faixa etária: \n");
 	

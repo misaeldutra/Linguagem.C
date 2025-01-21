@@ -49,13 +49,13 @@ int main(){
 	
 	printf("\n RESULTADO GERAL DA VOTAÇÃO: \n\n");
 	
-	printf("   Candidato 1 = %d votos \n", candidato1);
-	printf("   Candidato 2 = %d votos\n", candidato2);
-	printf("   Candidato 3 = %d votos\n", candidato3);
-	printf("   Candidato 4 = %d votos \n", candidato4);
+	printf("   Candidato 1 = %d voto(s) \n", candidato1);
+	printf("   Candidato 2 = %d voto(s) \n", candidato2);
+	printf("   Candidato 3 = %d voto(s) \n", candidato3);
+	printf("   Candidato 4 = %d voto(s) \n", candidato4);
 	
-	printf("   Votos nulos = %d votos \n", vnulo);
-	printf("   Votos em branco = %d \n\n", vbranco);
+	printf("   Votos nulos = %d voto(s) \n", vnulo);
+	printf("   Votos em branco = %d voto(s) \n\n", vbranco);
 	
     //imprimir a porcentagem:
 		

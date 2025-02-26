@@ -13,7 +13,7 @@ int main(){
 			if(i==j){
 				matriz[i][j] = 1; // seria a diagonal principal;
 			}else if (i + j == 6 -1){
-				matriz[i][j] = 2;
+				matriz[i][j] = 2; // diagonal secundária
 			
 			} else{
 				matriz[i][j] = 3;

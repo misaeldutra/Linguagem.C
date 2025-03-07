@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <string.h>
 
-void CadastrarAlunos (){
-	char nome[10][30];
-	float notas[10][4];
-	int quantidade = 0;
+void CadastrarAlunos (char nome[10][30]; float notas[10][4]; int *quantidade; ){
 	int opcao = 0;
 	int i;
 	int x;
 	
 	while (1) {
 		printf("\n\nInforme o nome do aluno: ");
-		scanf("%[^\n]" , nome[quantidade]);
+		scanf(" %[^\n]" , nome[*quantidade]);
 		getchar();
 		
 		if(strcmp(nome[quantidade], "finalizar") == 0 || strcmp(nome[quantidade], "FINALIZAR") == 0 || strcmp(nome[quantidade], "Finalizar") == 0){
@@ -34,7 +32,7 @@ void CadastrarAlunos (){
 	for(i = 0; i < quantidade; i++){
 		printf("\nAluno %d: %s ", i + 1, nome[i]);
 		for(x = 0; x < 4; x++){
-			printf("N%d: %.2f", x + 1, notas[i][x]);
+			printf("%d: %.2f", x + 1, notas[i][x]);
 		}
 		printf("\n");
 	}
@@ -61,11 +59,11 @@ void mediaaluno(float m){
 					float soma = 0;
 					 int localizou = 0;
 					printf("\nQual o nome do aluno?");
-					scanf("%[^\n]", &aluno);
+					scanf("%[^\n]", &nome);
 					
 					for(i = 0; i < quantidade; i++){
 						
-						if(strcmp(nome[i], aluno) == 0){
+						if(strcmp(nome[i], nome) == 0){
 							for(x = 0; x < 4; x++){
 								soma = soma + notas[i][x];
 							}
@@ -74,11 +72,17 @@ void mediaaluno(float m){
 						}
 					}
 					if(localizou == 0){
-						printf("\nAlino não encontrado!\n");
+						printf("\nAluno não encontrado!\n");
 					}
 }
 
 void Listatodos( float alunomedia){
+	char nome[10][30];
+	float notas[10][4];
+	int quantidade = 0;
+	int opcao = 0;
+	int i;
+	int x;
 	float soma;
 					
 					printf("\nAlunos e suas médias:\n");
@@ -93,6 +97,12 @@ void Listatodos( float alunomedia){
 
 void Aprovados ( float aprovados){
 	float soma;
+	char nome[10][30];
+	float notas[10][4];
+	int quantidade = 0;
+	int opcao = 0;
+	int i;
+	int x;
 					int localizou = 0;
 					
 					printf("\nAlunos APROVADOS:\n");
@@ -113,6 +123,12 @@ void Aprovados ( float aprovados){
 
 void EmFinal ( float final){
 	float soma;
+	char nome[10][30];
+	float notas[10][4];
+	int quantidade = 0;
+	int opcao = 0;
+	int i;
+	int x;
 					int localizou = 0;
 					
 					printf("\nAlunos  em FINAL: \n");
@@ -133,6 +149,12 @@ void EmFinal ( float final){
 
 void Reprovados (float reprovados){
 	float soma;
+	char nome[10][30];
+	float notas[10][4];
+	int quantidade = 0;
+	int opcao = 0;
+	int i;
+	int x;
 					int localizou = 0;
 					
 					printf("\nAlunos REPROVADOS:\n");
@@ -170,7 +192,13 @@ int main(){
 	//opções de escolhas
 	while(opcao != 6){
 		
-		switch(opcao){
+		float m;
+		float alunomedia;
+		float aprovados;
+		float final;
+		float reprovados;
+		
+		switch (opcao) {
 			case 1:
 				{
 					mediaaluno(m);

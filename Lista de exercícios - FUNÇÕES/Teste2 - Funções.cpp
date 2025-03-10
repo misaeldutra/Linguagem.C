@@ -4,7 +4,7 @@
 
 double quadrado(double a){ // função
 	 
-	 return(a*a);
+	 return (a*a);
 }
 
 int main(){

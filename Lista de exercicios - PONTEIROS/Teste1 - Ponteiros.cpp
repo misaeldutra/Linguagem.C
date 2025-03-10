@@ -8,7 +8,7 @@
   
 // *ptr : O apontado por;  conteúdo do endereço da variável que ptr aponta.
 
-// ptr : O endereço da variável. Local onde a varoável está armazenada;
+// ptr : O endereço da variável. Local onde a variável está armazenada;
 
 // &ptr : O endereço do ponteiro;
 

@@ -48,8 +48,6 @@ int main(){
 	printf("\n");
     } 
 	
-	printf("\nO tamanho do vetor de posições: %d\n", tam);
-	
 	
 	
 	
